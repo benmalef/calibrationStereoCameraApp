@@ -26,7 +26,7 @@ void VisualizerStereoCamera::show() {
 void VisualizerStereoCamera::remapShow() {
   Mat leftStereoMapX, leftStereoMapY;
   Mat rightStereoMapX, rightStereoMapY;
-  FileStorage cvFile = FileStorage("calibrationParamaters.xml", FileStorage::READ);
+  FileStorage cvFile = FileStorage("calibrationParameters.xml", FileStorage::READ);
   cvFile["leftStereoMapX"] >> leftStereoMapX;
   cvFile["leftStereoMapY"] >> leftStereoMapY;
   cvFile["rightStereoMapX"] >> rightStereoMapX;
